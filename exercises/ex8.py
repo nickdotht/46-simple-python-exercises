@@ -1,15 +1,10 @@
-"""Write a function that takes a character (i.e. a 
-string of length 1) and returns True if it is a vowel, 
-False otherwise."""
+"""Define a function is_palindrome() that recognizes 
+palindromes (i.e. words that look the same written backwards). 
+For example, is_palindrome("radar") should return True."""
 
 # Solution by Nick Rameau - @R4meau
-vowels = ['a', 'e', 'i', 'o', 'u']
-
-def vornot(str):
-  if str in vowels:
-    return True
-  else:
-    return False
+def is_palindrome(str):
+  return str == str[::-1]
 
 # Solution by Your Name - @YourUsername
 # You can add your solution here.
@@ -20,6 +15,5 @@ def vornot(str):
 # Can see it later too.
 
 #test
-print vornot('e')
-print vornot('1')
-print vornot('z')
+print is_palindrome("radar")
+print is_palindrome("IzitizI")

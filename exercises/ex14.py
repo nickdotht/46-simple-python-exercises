@@ -1,15 +1,10 @@
-"""Write a function that takes a character (i.e. a 
-string of length 1) and returns True if it is a vowel, 
-False otherwise."""
+"""Write a program that maps a list of words into a list 
+of integers representing the lengths of the correponding words."""
 
 # Solution by Nick Rameau - @R4meau
-vowels = ['a', 'e', 'i', 'o', 'u']
-
-def vornot(str):
-  if str in vowels:
-    return True
-  else:
-    return False
+def words_length(lst):
+  lenlist = [len(i) for i in lst]
+  return lenlist
 
 # Solution by Your Name - @YourUsername
 # You can add your solution here.
@@ -20,6 +15,6 @@ def vornot(str):
 # Can see it later too.
 
 #test
-print vornot('e')
-print vornot('1')
-print vornot('z')
+print words_length(['Hello', 'world!'])
+print words_length(['Python', 'is', 'awesome!'])
+print words_length(['You', 'said', 'it', 'bro!'])
