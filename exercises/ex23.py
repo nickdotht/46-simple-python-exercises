@@ -6,7 +6,13 @@ E.g. correct("This   is  very funny  and    cool.Indeed!") should
 return "This is very funny and cool. Indeed!" Tip: Use regular 
 expressions!"""
 
-# Solution by Nick Rameau
+# Solution by Nick Rameau - @R4meau
+import re
+def correct(str):
+  checkspace = re.sub(r'\s{2,}', ' ', str)
+  makespace = re.sub(r'(\.)(\w)', r'\1 \2', checkspace)
+  return makespace
+
 
 # Solution by Your Name - @YourUsername
 # You can add your solution here.
@@ -17,3 +23,4 @@ expressions!"""
 # Can see it later too.
 
 #test
+print correct('This   is    very funny  and    cool.Indeed!')
