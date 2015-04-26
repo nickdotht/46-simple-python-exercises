@@ -25,7 +25,7 @@ def make_ing_form(verb):
       if verb[-1] not in vowels:
         return verb+verb[-1]+'ing'
   else:
-    return verb+'ing'
+    return verb+'ing' 
 
 
 # Solution by Your Name - @YourUsername
@@ -41,3 +41,4 @@ print make_ing_form('lie')
 print make_ing_form('see')
 print make_ing_form('move')
 print make_ing_form('hug')
+print make_ing_form('touch')
