@@ -1,6 +1,11 @@
 """Implement the higher order functions map(), filter() and reduce(). 
 (They are built-in but writing them yourself may be a good exercise.)"""
 # Solution by Nick Rameau - @R4meau
+# My solutions are based on the definitions from the python help function
+# >> help('map')
+# >> help('filter')
+# >> help('reduce')
+# See for yourself.
 # map() implementation. I know I didn't fully implement it because it would 
 # be kinda long, but that's the basic
 def map(function, sequence):
@@ -22,6 +27,7 @@ def filter(function, sequence):
     
   for item in sequence:
     if function(item):
+      # Add the item according to the type of sequence
       if isinstance(sequence, tuple):
         result += (item,)
       elif isinstance(sequence, str):
@@ -32,6 +38,8 @@ def filter(function, sequence):
 
 # reduce() implementation
 def reduce(function, sequence, initial=None):
+  # Set result to the initial number if initial is set, else, set it to the 
+  # first element.
   result = initial if initial else sequence[0]
   if initial:
     for item in sequence:
