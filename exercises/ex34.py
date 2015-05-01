@@ -3,6 +3,7 @@ accepts a file name from the user, builds a frequency listing of the
 characters contained in the file, and prints a sorted and nicely formatted 
 character frequency table to the screen."""
 
+# Solution by Nick Rameau - @R4meau
 def char_freq_table(file_name):
   freq = {}
   with open(file_name, 'r') as f:
@@ -23,6 +24,14 @@ def char_freq_table(file_name):
     for char in sorted(freq.items(), key=lambda x: x[1], reverse=True):
       print char[0], freq[char[0]]
 
-file_name = raw_input('Enter file name (ex. poem.txt)> ')
+# Solution by Your Name - @YourUsername
+# You can add your solution here.
+# A good way to show other people your solution
+# to this exercise. Remember to comment it out.
+# I'll be waiting for your pull request.
+# And please, leave this comment block intact so other people
+# Can see it later too.
 
+#test
+file_name = raw_input('Enter file name (ex. poem.txt)> ')
 char_freq_table(file_name)

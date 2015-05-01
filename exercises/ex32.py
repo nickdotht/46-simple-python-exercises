@@ -19,7 +19,6 @@ with open(file_name, 'r') as f:
     # Here I used rstrip to remove the newline (\n) at the end of the line
     if is_palindrome(line.rstrip()):
       print line.rstrip()
-  
 
 # Solution by Your Name - @YourUsername
 # You can add your solution here.
