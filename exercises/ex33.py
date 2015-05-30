@@ -7,7 +7,6 @@ For example, if "stressed" and "desserts" is part of the word list, the
 the output should include the pair "stressed desserts". Note, by the way, 
 that each pair by itself forms a palindrome!"""
 
-# Solution by Nick Rameau - @R4meau
 import string
 file_name = raw_input('Enter file name (ex. semordnilaps.txt)> ')
 unwanted = string.punctuation + ' '
@@ -23,11 +22,3 @@ with open(file_name, 'r') as f:
       print clean(line), clean(line)[::-1]
     else:
       found.append(clean(line))
-
-# Solution by Your Name - @YourUsername
-# You can add your solution here.
-# A good way to show other people your solution
-# to this exercise. Remember to comment it out.
-# I'll be waiting for your pull request.
-# And please, leave this comment block intact so other people
-# Can see it later too.

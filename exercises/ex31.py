@@ -1,6 +1,6 @@
 """Implement the higher order functions map(), filter() and reduce(). 
 (They are built-in but writing them yourself may be a good exercise.)"""
-# Solution by Nick Rameau - @R4meau
+
 # My solutions are based on the definitions from the python help function
 # >> help('map')
 # >> help('filter')
@@ -48,15 +48,6 @@ def reduce(function, sequence, initial=None):
     for item in sequence[1:]:
       result = function(result, item)
   return result
-
-
-# Solution by Your Name - @YourUsername
-# You can add your solution here.
-# A good way to show other people your solution
-# to this exercise. Remember to comment it out.
-# I'll be waiting for your pull request.
-# And please, leave this comment block intact so other people
-# Can see it later too.
 
 #test
 print map(lambda x: x * 2, [1,2,3,4])

@@ -4,7 +4,6 @@ quick brown fox jumps over the lazy dog. Your task here is
 to write a function to check a sentence to see if it is a 
 pangram or not."""
 
-# Solution by Nick Rameau
 import string
 
 alpha = string.ascii_lowercase
@@ -18,14 +17,6 @@ def is_pangram(str):
     return True
   else:
     return False
-
-# Solution by Your Name - @YourUsername
-# You can add your solution here.
-# A good way to show other people your solution
-# to this exercise. Remember to comment it out.
-# I'll be waiting for your pull request.
-# And please, leave this comment block intact so other people
-# Can see it later too.
 
 #test
 print is_pangram("The quick brown fox jumps over the lazy dog.")

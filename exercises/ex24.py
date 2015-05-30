@@ -12,7 +12,6 @@ Note however that the rules must be regarded as heuristic, in the
 sense that you must not expect them to work for all cases. Tip: Check 
 out the string method endswith()."""
 
-# Solution by Nick Rameau - @R4meau
 suffixes = ('o', 'ch', 's', 'sh', 'x', 'z')
 def make_3sg_form(verb):
   if verb.endswith('y'):
@@ -21,14 +20,6 @@ def make_3sg_form(verb):
     return verb+'es'
   else:
     return verb+'s'
-
-# Solution by Your Name - @YourUsername
-# You can add your solution here.
-# A good way to show other people your solution
-# to this exercise. Remember to comment it out.
-# I'll be waiting for your pull request.
-# And please, leave this comment block intact so other people
-# Can see it later too.
 
 #test
 print make_3sg_form('try')

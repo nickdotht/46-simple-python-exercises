@@ -13,7 +13,6 @@ given a verb in infinitive form returns its present participle form. Test
 your function with words such as lie, see, move and hug. However, you must 
 not expect such simple rules to work for all cases."""
 
-# Solution by Nick Rameau - @R4meau
 vowels = 'aeiou'
 def make_ing_form(verb):
   if verb.endswith('ie'):
@@ -27,18 +26,9 @@ def make_ing_form(verb):
   else:
     return verb+'ing' 
 
-
-# Solution by Your Name - @YourUsername
-# You can add your solution here.
-# A good way to show other people your solution
-# to this exercise. Remember to comment it out.
-# I'll be waiting for your pull request.
-# And please, leave this comment block intact so other people
-# Can see it later too.
-
 #test
 print make_ing_form('lie')
-print make_ing_form('see')
+print make_ing_form('see') # I know. Doesn't work. It's an exception
 print make_ing_form('move')
 print make_ing_form('hug')
 print make_ing_form('touch')
