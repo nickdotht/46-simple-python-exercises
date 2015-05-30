@@ -5,20 +5,11 @@ and returns True if x is a member of a, False otherwise.
   for the sake of the exercise you should pretend Python 
   did not have this operator.)"""
 
-# Solution by Nick Rameau - @R4meau
 def is_member(ele, lst):
   for e in lst:
     if ele == e:
       return True
   return False
-
-# Solution by Your Name - @YourUsername
-# You can add your solution here.
-# A good way to show other people your solution
-# to this exercise. Remember to comment it out.
-# I'll be waiting for your pull request.
-# And please, leave this comment block intact so other people
-# Can see it later too.
 
 #test
 print is_member("e", ['a', 'e', 'i', 'o', 'u'])
