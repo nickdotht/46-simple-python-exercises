@@ -33,7 +33,7 @@ d = {'a':'alfa', 'b':'bravo', 'c':'charlie', 'd':'delta', 'e':'echo',
 	 'z':'zulu'}
 
 def icao(txt, icao_pause=1, word_pause=3):
-	words = txt.split() # Take each word from privided string
+	words = txt.split() # Take each word from provided string
 
 	for word in words: # For every word in the provided string
 		for char in word: # For every character in the word
@@ -44,4 +44,4 @@ def icao(txt, icao_pause=1, word_pause=3):
 
 #test
 icao("Hello world, hi, I'm Nick!", 0.10, 1)
-icao("This is gonna take long! Indeed bro, indeed.")
+icao("The quick brown Fox jumps over the laZy Dog!")
