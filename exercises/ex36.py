@@ -9,7 +9,7 @@ def hapax(file_name):
 	# Fill the words list
 	with open(file_name, 'r') as f:
 		for line in f:
-			words += line.rstrip().lower().split()
+			words += line.lower().split()
 
 	# Filter the hapaxes from the rest
 	hapaxes = filter(lambda x: words.count(x) == 1, words)

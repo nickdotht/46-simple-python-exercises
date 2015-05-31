@@ -3,7 +3,9 @@ which all the lines from the original file are numbered from 1 to n
 (where n is the number of lines in the file)."""
 
 import re
-def text_editor(file_name):
+
+# I couldn't think of a better name for this :P
+def numberize(file_name):
 	# Get basename and extension of provided file to create a better
 	# name for the new file
 	fname = re.search(r'([\w-]+)(\.[\w.-]+)', file_name)
@@ -17,5 +19,5 @@ def text_editor(file_name):
 				f2.write('%d %s' % (lnum+1, lval))
 
 #test
-text_editor('poem.txt')
+numberize('poem.txt')
 						
