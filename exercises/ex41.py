@@ -64,5 +64,5 @@ def lingo(words):
 			lingo_finder(guess.lower())
 
 #test
-lingo(['alley'])
-# lingo(['tiger', 'house', 'cigar', 'opera', 'modem', 'horse', 'plane', 'white'])
+# lingo(['alley'])
+lingo(['tiger', 'house', 'cigar', 'opera', 'modem', 'horse', 'plane', 'white'])
