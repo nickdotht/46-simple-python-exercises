@@ -40,7 +40,8 @@ def sentence_splitter(file_name):
 	sentences = re.sub(r'\n', '', file_content)
 
 	# Now we add a newline after each period only if that period is not
-	# preceded by 'Mr', 'Mrs' or 'Dr'
+	# preceded by 'Mr', 'Mrs' or 'Dr' and is followed by a space and an
+	# uppercase letter
 	sentences = re.sub(r'(?<!Mr)(?<!Mrs)(?<!Dr)\.\s([A-Z])', r'.\n\1', sentences)
 
  	# Then we do the same after every '!'
