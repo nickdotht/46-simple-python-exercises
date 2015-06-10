@@ -1,6 +1,5 @@
-### 46 Simple Python exercises
+### [46 Simple Python exercises](http://www.ling.gu.se/~lager/python_exercises.html)
 
-Solutions to the 46 Simple Python Exercises.
 This list of exercises comprises logical operators, loops, input and output, regular expressions and more in order for people to have a basic overview of the language.
 
 They might not be the best solutions, but I'd be glad to pull your requests.
