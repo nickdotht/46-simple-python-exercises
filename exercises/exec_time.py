@@ -1,4 +1,9 @@
+# If you want to know the execution time of a function, just import this
+# file and add this as a decorator of the function:
+# @exec_time
+# def function_name():
 def exec_time(func):
+	"""Returns the execution time of a function"""
 	import timeit
 	def wrapper(*args, **kwargs):
 		start_time = timeit.default_timer()
