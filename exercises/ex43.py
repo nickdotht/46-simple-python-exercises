@@ -6,7 +6,6 @@ finds the sets of words that share the same characters that contain the most
 words in them."""
 
 from collections import defaultdict
-from exec_time import exec_time
 
 def anagram_finder(file_name):
 
@@ -16,13 +15,13 @@ def anagram_finder(file_name):
 		for line in f:
 			words.append(line.rstrip())
 
+	# The point here is that every word that have the same letters and the
+	# same length will be the same when they are sorted
 	# For a good enough explanation of defaultdict, see this answer:
 	# http://goo.gl/NbwXOv or in your Python interpreter, do:
 	# >> help('collections.defaultdict')
 	# If you know how defaultdict works, you should understand this
 	# block of codes
-	# The point here is that every word that have the same letters and the
-	# same length will be the same when they are sorted
 	anadict = defaultdict(list)
 	for word in words:
 		key = ''.join(sorted(word))
