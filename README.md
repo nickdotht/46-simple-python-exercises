@@ -14,7 +14,9 @@ I made sure to comment the hardest ones, or the ones that gave me some trouble.
 I implemented all the solutions using Python 2.7.1 but if you're using Python 3.x most of the solutions won't work for you.
 That's why I created a converter for you to convert all the solutions into Python 3. 
 In the project folder you will notice two files:
+
 -- *makepython3.py* A converter that uses the 2to3 command
+
 -- *make_python3.py* A converter that uses regular expressions
 
 You don't have to use both, but I recommend running the one using the 2to3 command because it is the official way to convert 2.7 to 3.x. The latter one is just me using my regex skills to do the conversion, you might wanna have a look at it to understand how it works ;)
