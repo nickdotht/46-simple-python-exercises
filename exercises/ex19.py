@@ -1,4 +1,4 @@
-""""99 Bottles of Beer" is a traditional song in the United States and 
+"""99 Bottles of Beer" is a traditional song in the United States and 
 Canada. It is popular to sing on long trips, as it has a very repetitive 
 format which is easy to memorize, and can take a long time to sing. 
 The song's simple lyrics are as follows:
