@@ -25,7 +25,8 @@ So all you need to do after downloading the project is
 
 ```bash
 cd 46-simple-python-exercises
-python makepython3.py```
+python makepython3.py
+```
 
 And it will create a folder called *exercisespy3* in the same directory. In this folder you will find all the solutions in Python 3.x.
 
