@@ -14,7 +14,7 @@ I made sure to comment the hardest ones, or the ones that gave me some trouble.
 To download this project, right from your terminal, do:
 
 ```
-# git clone https://github.com/R4meau/46-simple-python-exercises.git
+git clone https://github.com/R4meau/46-simple-python-exercises.git
 ```
 
 or simply [click here](https://github.com/R4meau/46-simple-python-exercises/archive/master.zip) if you don't use git.
@@ -30,8 +30,8 @@ In the project folder you will notice this file:
 So all you need to do after downloading/cloning the project is
 
 ```
-# cd 46-simple-python-exercises
-# python makepython3.py
+cd 46-simple-python-exercises
+python makepython3.py
 ```
 
 And it will create a folder called **exercisespy3** in the same directory. In this folder you will find all the solutions in Python 3.x.
