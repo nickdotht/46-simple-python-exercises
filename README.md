@@ -36,4 +36,8 @@ python makepython3.py
 
 And it will create a folder called **exercisespy3** in the same directory. In this folder you will find all the solutions in Python 3.x.
 
+## Sponsors
+
+<a href="https://app.codesponsor.io/link/Fo4iMpT8bBWXwb54Lj7DPwqL/R4meau/46-simple-python-exercises" rel="nofollow"><img src="https://app.codesponsor.io/embed/Fo4iMpT8bBWXwb54Lj7DPwqL/R4meau/46-simple-python-exercises.svg" style="width: 888px; height: 68px;" alt="Sponsor" /></a>
+
 Enjoy.
