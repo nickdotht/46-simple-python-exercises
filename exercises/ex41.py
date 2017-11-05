@@ -19,50 +19,35 @@ Clue: [t][i]m[e]s
 tiger
 Clue: [t][i][g][e][r]"""
 
-# I still can't fully implement it
-# It won't (fully) work with words that contain the same letter twice
-# Eg. word = "alley" if the user enters "valley" (witch will be truncated 
-# To "valle" by this program) it should return "v(a)[l](l)(e)" but it
-# Instead returns "v(a)(l)(l)(e)" And I couldn't find a way to make it work
-# But I think a solution would be to use regex, which means I'll have to
-# Think of a different algorithm to implement. If you found a way to make
-# It fully work, please, send me a pull request. I'd love to see your solu-
-# tion
 
 from random import randrange
 
-# It's not too hard, but I'll comment anyway
 def lingo(words):
-	# Choose a word from the list randomly
-	hidden = words[randrange(0, len(words))]
+    # Choose a word from the list randomly
+    hidden = words[randrange(0, len(words))]
 
-	# The function that takes care of the lingo
-	def lingo_finder(guess):
-		clue = ''
-		for letter in guess:
-			letter = letter.lower()
-			if letter in hidden:
-				# If the letter in the guess is the same as the letter in the
-				# Chosen word and they are at the same position (index)
-				if guess[guess.index(letter)] == hidden[guess.index(letter)] \
-					and guess.index(letter) == hidden.index(letter):
-					clue += '[%s]' % letter # mark it as fully correct
-				else:
-					clue += '(%s)' % letter # mark it as almost correct
-			else:
-				clue += letter # If not in hidden, just add it
-		print 'Clue: %s' % clue
+    # Map to build clue
+    sym_map = {0: "%s", 1:"(%s)", 2: "[%s]"}
+    def lingo_finder(guess):
+        # 0: letter not present in the hidden word
+        # 1: letter present but position is wrong
+        # 2: correct letter and position
+        cenc = [(int(guess[i] == hidden[i])) + int(guess[i] in hidden) for i in range(5)] 
+        # Enclose the letter with appropriate symbols using sym_map
+        print "".join([sym_map[cenc[i]]%guess[i] for i in range(5)])
+        return hidden != guess
+        print
 
-	# The game
-	# Even tho we're the ones who provide the words, we still make sure it
-	# Is 5 characters long. It's the rule of the game
-	if len(hidden) == 5:
-		while True:
-			# If user provides a word longer than 5 characters, we 
-			# truncate it
-			guess = raw_input()[:5]
-			lingo_finder(guess.lower())
+    if len(hidden) == 5:
+        is_wrong=True
+        # Until guess is right
+        while is_wrong:
+            # If user provides a word longer than 5 characters, we
+            # truncate it
+            guess = raw_input()[:5]
+            is_wrong = lingo_finder(guess.lower())
+        print "You guessed it!"
 
-#test
-# lingo(['alley'])
-lingo(['tiger', 'house', 'cigar', 'opera', 'modem', 'horse', 'plane', 'white'])
+
+# Test
+lingo(['alley', 'tally', 'valet', 'tiger', 'house', 'cigar', 'opera', 'modem', 'horse', 'plane', 'white', 'fiery'])
